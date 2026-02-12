@@ -472,6 +472,7 @@ That covers how to manage Conda environment using Anaconda Navigator.
 - **requirements.txt**: Python venv dependencies file
 - **environment.yml**: Conda environment dependencies file (please change the ```prefix``` setting to match your environment)
 - **example_notebook.ipynb**: Example Jupyter Notebook file for verifying you have installed Data Library successfully
+- **console_code.py**: Example Python console code file for verifying you have installed Data Library successfully
 - **lseg-data.config.json**: Data Library configuration file
 
 ## Troubleshooting
