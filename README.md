@@ -467,6 +467,13 @@ To restore a Conda environment with the same set of Python packages, you can use
 
 That covers how to manage Conda environment using Anaconda Navigator.
 
+## Come with the Repository
+
+- **requirements.txt**: Python venv dependencies file
+- **environment.yml**: Conda environment dependencies file (please change the ```prefix``` setting to match your environment)
+- **example_notebook.ipynb**: Example Jupyter Notebook file for verifying you have installed Data Library successfully
+- **lseg-data.config.json**: Data Library configuration file
+
 ## Troubleshooting
 
 **Question 1**: I got **SSLCertVerificationError** message when I try *pip install lseg-data* command.
