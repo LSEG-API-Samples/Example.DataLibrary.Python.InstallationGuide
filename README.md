@@ -1,10 +1,10 @@
-# Step-By-Step Guide to install Data Library for Python Part 1
+# Step-By-Step Guide to install Data Library for Python using Virtual Environment
 
 ## Introduction
 
 The Data Library is latest evolution of library that provides a set of ease-of-use interfaces offering coders uniform access to the breadth and depth of LSEG financial data and services. The [Data Library for Python](https://developers.lseg.com/en/api-catalog/lseg-data-platform/lseg-data-library-for-python) provides a set of ease-of-use interfaces offering coders uniform access to the breadth and depth of financial data and services available on the Workspace, RDP, and Real-Time Platforms via the Python programming language. The API is designed to provide consistent access through multiple access channels and target both Professional Developers and Financial Coders. Developers can choose to access content from the desktop, through their deployed streaming services, or directly to the cloud. With the Data Library, the same Python code can be used to retrieve data regardless of which access point you choose to connect to the platform.
 
-This article provides a step-by-step guide to install the Python version of the Data library. I strongly recommend you read this article together with the [library Quick Start page](https://developers.lseg.com/en/api-catalog/lseg-data-platform/lseg-data-library-for-python/quick-start) to cover all basic knowledge that you need to use the library.
+This article provides a step-by-step guide to install the Python version of the Data library using the Virtual Environment, which is a recommended way. I strongly recommend you read this article together with the [library Quick Start page](https://developers.lseg.com/en/api-catalog/lseg-data-platform/lseg-data-library-for-python/quick-start) to cover all basic knowledge that you need to use the library.
 
 ## Prerequisite 
 
@@ -42,11 +42,21 @@ Traceback (most recent call last):  File "c:\python\LDP_Library\LDP_Library\Exam
 
 This error message means the Python already has the NumPy library version 1.x (from other projects) installed. However, the Data Library for Python requires NumPy version 2 (**as of version 2.1.1**) which both version cannot be installed together.
 
-How do we handle this dependencies conflict issue? We can use a **Python virtual environment** to solve the issue. A Python virtual environment is an isolated directory containing its own Python interpreter and a set of installed packages. This isolation prevents conflicts between dependencies of different Python projects and ensures project reproducibility.
+How do we handle this dependencies conflict issue? We can use a **Python virtual environment** to solve the issue. 
+
+### What is the Python Virtual Environment?
+
+A Python virtual environment is an isolated directory containing its own Python interpreter and a set of installed packages. This isolation prevents conflicts between dependencies of different Python environments/projects and ensures project reproducibility.
 
 I am demonstrating with the most popular Python virtual environment systems, the [venv](https://docs.python.org/3/library/venv.html) and [Anaconda](https://www.anaconda.com/)/[MiniConda](https://www.anaconda.com/docs/getting-started/miniconda/main).
 
-The logic can be applied to the other Python virtual environment systems like [Pipenv](https://pipenv.pypa.io/en/latest/) or [Poetry](https://python-poetry.org/) too.
+The logic can be applied to the other Python virtual environment systems like [Virtualenv](https://virtualenv.pypa.io/en/latest/), [Pipenv](https://pipenv.pypa.io/en/latest/), or [Poetry](https://python-poetry.org/) too.
+
+To learn more about the Python Virtual Environment, please check the following articles 
+
+- [Python Virtual Environments: A Primer](https://realpython.com/python-virtual-environments-a-primer)
+- [Python Virtual Environments: Why and When Should You Use Them?](https://towardsdatascience.com/python-virtual-environments-why-and-when-should-you-use-them-be57b0c0323d/)
+- [An Introduction to Virtual Environments in Python](https://medium.com/@dakota.lillie/an-introduction-to-virtual-environments-in-python-ce16cda92853)
 
 ## Python venv Installation
 
@@ -530,5 +540,8 @@ You can find more detail regarding the Data Library from the following resources
 - [Essential Guide to the Data Libraries - Generations of Python library (EDAPI, RDP, RD, LD)](https://developers.lseg.com/en/article-catalog/article/essential-guide-to-the-data-libraries) article.
 - [Upgrade from using Eikon Data API to the Data library](https://developers.lseg.com/en/article-catalog/article/Upgrade-from-using-Eikon-Data-API-to-the-Data-library) article.
 - [Data Library for Python Examples on GitHub](https://github.com/LSEG-API-Samples/Example.DataLibrary.Python) repository.
+- [Python Virtual Environments: A Primer](https://realpython.com/python-virtual-environments-a-primer) article.
+- [Python Virtual Environments: Why and When Should You Use Them?](https://towardsdatascience.com/python-virtual-environments-why-and-when-should-you-use-them-be57b0c0323d/) article.
+- [An Introduction to Virtual Environments in Python](https://medium.com/@dakota.lillie/an-introduction-to-virtual-environments-in-python-ce16cda92853) article.
 
 For any question related to this example or Data Library, please use the Developers Community [Q&A Forum](https://community.developers.refinitiv.com).
