@@ -12,6 +12,8 @@ This article provides a step-by-step guide to install the Python version of the 
 
 You need the [Python ](https://www.python.org/) programming language installed on your machine.
 
+This article is based on Python version 3.12.
+
 ### Access to Python Package Repository
 
 You need an access to Python Package Repository. The public repositories are [PyPI](https://pypi.org/), [Anaconda](https://anaconda.org/anaconda/repo), and [Conda-forge](https://anaconda.org/conda-forge/repo).
